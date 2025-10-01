@@ -1,0 +1,49 @@
+/* Developer-friendly Dark Theme */
+body {
+  font-family: 'Fira Code', monospace; /* coding style font */
+  background-color: #1e1e2f; /* dark VS Code style */
+  color: #c5c6c7;
+  text-align: center;
+  margin: 0;
+  padding: 50px 20px;
+}
+
+h1 {
+  color: #61dafb; /* React-ish blue accent */
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: #f0f0f0;
+}
+
+button {
+  background: linear-gradient(135deg, #61dafb, #21a1f1);
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background-color: #2a2a3d;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+

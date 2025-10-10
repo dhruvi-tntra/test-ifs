@@ -45,5 +45,59 @@ button:hover {
   border-radius: 16px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.5);
 }
+/* Group Buttons */
+.group-buttons button {
+  margin: 5px;
+  background: linear-gradient(135deg, #ff7f50, #ff6347);
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
+.group-buttons button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
 
+/* Sidebar Styles */
+.sidebar {
+  height: 100%;
+  width: 0; /* hidden by default */
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #2a2a3d;
+  overflow-x: hidden;
+  transition: 0.4s;
+  padding-top: 60px;
+  z-index: 100;
+  color: #f0f0f0;
+}
+
+.sidebar h2 {
+  color: #61dafb;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sidebar p {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 36px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.close-btn:hover {
+  color: #ff6347;
+}

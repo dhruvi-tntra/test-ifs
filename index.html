@@ -7,9 +7,33 @@
 </head>
 <body>
   <div class="container">
-    <h1>Welcome - One Page App 🚀</h1>
-    <p>This is a static page. Edit it and commit your changes!</p>
+    <h1>Welcome to IFS Git Training!</h1>
+    <p>Exploring version control, commits, branches, and collaboration workflows.</p>
     <button onclick="greet()">Click Me</button>
+
+    <h2>Groups</h2>
+    <div class="group-buttons">
+      <button onclick="openSidebar('test')">test</button>
+
+      <button onclick="openSidebar('Group 1')">Group 1</button>
+      <button onclick="openSidebar('Group 2')">Group 2</button>
+      <button onclick="openSidebar('Group 3')">Group 3</button>
+      <button onclick="openSidebar('Group 4')">Group 4</button>
+      <button onclick="openSidebar('Group 5')">Group 5</button>
+      <button onclick="openSidebar('Group 6')">Group 6</button>
+      <button onclick="openSidebar('Group 7')">Group 7</button>
+      <button onclick="openSidebar('Group 8')">Group 8</button>
+      <button onclick="openSidebar('Group 9')">Group 9</button>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <span class="close-btn" onclick="closeSidebar()">&times;</span>
+    <div id="sidebar-content">
+      <h2>Group</h2>
+      <p>Sidebar content will appear here.</p>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>

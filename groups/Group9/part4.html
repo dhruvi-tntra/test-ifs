@@ -1,0 +1,125 @@
+<!-- member4_feedback.html -->
+<section id="feedback">
+  <h2>Feedback</h2>
+  <form>
+    <label for="rating">Rate your experience:</label>
+    <select id="rating">
+      <option>Excellent</option>
+      <option>Good</option>
+      <option>Average</option>
+      <option>Poor</option>
+    </select>
+
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" rows="5" placeholder="Write your feedback here..."></textarea>
+
+    <div style="text-align:center; margin-top: 20px;">
+      <button type="submit">Submit Form</button>
+    </div>
+  </form>
+</section>
+
+Add this into the main file
+<footer>
+</footer>
+<style>
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 20px;
+  }
+
+  header {
+    text-align: center;
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    color: white;
+    padding: 30px 15px;
+    border-radius: 10px;
+  }
+
+  nav {
+    text-align: center;
+    background: white;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #182848;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: #4b6cb7;
+  }
+
+  section {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  section h2 {
+    color: #182848;
+    border-bottom: 2px solid #4b6cb7;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  label {
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+
+  input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #4b6cb7;
+    box-shadow: 0 0 4px rgba(75, 108, 183, 0.4);
+  }
+
+  button {
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+
+  button:hover {
+    background: linear-gradient(135deg, #3c579e, #121a38);
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px;
+    color: #444;
+    font-style: italic;
+  }
+</style>
+

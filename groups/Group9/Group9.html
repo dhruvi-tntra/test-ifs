@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group 9</title>
+</head>
+<body>
+    <div id="part1"></div>
+    <div id="part2"></div>
+    <div id="part3"></div>
+    <div id="part4"></div>
+    
+    <script>
+    async function loadPart(id, file) {
+      const response = await fetch(file);
+      const html = await response.text();
+      document.getElementById(id).innerHTML = html;
+    }
+
+    loadPart('part1', 'part1.html');
+    loadPart('part2', 'part2.html');
+    loadPart('part3', 'part3.html');
+    loadPart('part4', 'part4.html');
+  </script>
+</body>
+</html>

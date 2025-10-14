@@ -1,61 +1,74 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>TEST Group</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🚀 TEST Group</title>
   <style>
+    /* 🧠 Dark Developer Theme */
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: "Fira Code", monospace;
+      margin: 0;
+      padding: 0;
     }
 
-    .sidebar-header {
-      background-color: #e0f7fa;
-      border: 2px solid #b2ebf2;
-      border-radius: 8px;
-      padding: 15px;
-      margin: 20px;
-    }
-
-    .sidebar-header h2 {
+    h1 {
       text-align: center;
-      color: #00796b;
+      color: #58a6ff;
+      font-size: 2.5rem;
+      margin-top: 40px;
+      text-shadow: 0 0 10px rgba(88, 166, 255, 0.4);
     }
 
-    .sidebar-header p {
-      color: #333;
-      line-height: 1.6;
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+      gap: 30px;
     }
 
-    .sidebar-header em {
-      color: #0097a7;
-      font-weight: bold;
+    iframe {
+      width: 85%;
+      max-width: 900px;
+      height: 400px;
+      border: 1.5px solid #30363d;
+      border-radius: 12px;
+      background-color: #161b22;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      transition: all 0.3s ease;
     }
 
-    hr {
-      border: 0;
-      border-top: 1px solid #ccc;
-      margin: 20px;
+    iframe:hover {
+      border-color: #58a6ff;
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(56, 189, 248, 0.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #8b949e;
+      border-top: 1px solid #30363d;
+      margin-top: 50px;
+    }
+
+    footer span {
+      color: #58a6ff;
     }
   </style>
 </head>
 <body>
+  <h1>🚀 TEST Group Dashboard</h1>
 
-  <!-- ===========================
-       HEADER SECTION (Member 1)
-       =========================== -->
-  <section class="sidebar-header">
-    <h2>🚀 TEST Group</h2>
-    <p><strong>Assigned to:</strong> <em>Amaan Tai</em></p>
-    <p>
-      Hey there! 👋 I’m <strong>Amaan</strong>, and welcome to our <em>Group 2</em> page.  
-      Our goal is to explore creativity, teamwork, and learning through this mini project. 
-      This section gives you a glimpse of what our group stands for — positivity, innovation, and collaboration!
-    </p>
-    <p><strong>Goal:</strong> Make this header warm, inviting, and simple with a touch of color 💫</p>
-  </section>
-
-  <hr>
-
+  <div class="wrapper">
+    <iframe src="test-ifs/groups/group2/header.html" title="Part1"></iframe>
+    <iframe src="" title="Part2"></iframe>
+    <iframe src="" title="Part3"></iframe>
+  <footer><span></span> TEST Group6 </footer>
 </body>
 </html>

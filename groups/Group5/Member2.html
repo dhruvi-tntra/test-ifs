@@ -3,9 +3,129 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tasks & Learning Goals - Member 2</title>
+
+    <style>
+      .container1 {
+        background-color: #f2f4f8;
+        font-family: "Segoe UI", Arial, sans-serif;
+        color: #333;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      .sidebar-body {
+        background-color: #ffffff;
+        border-radius: 16px;
+        padding: 25px 30px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        max-width: 100%;
+        width: 100%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .sidebar-body:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+      }
+
+      .sidebar-body h3 {
+        color: #2b5be3;
+        border-bottom: 3px solid #2b5be3;
+        padding-bottom: 6px;
+        margin-bottom: 18px;
+        font-size: 1.4em;
+      }
+
+      .sidebar-body p {
+        line-height: 1.6;
+        margin: 10px 0;
+      }
+
+      .sidebar-body em {
+        color: #666;
+      }
+
+      .task-list {
+        list-style-type: "🟢 ";
+        padding-left: 20px;
+        margin: 10px 0 25px 0;
+      }
+
+      .task-list li {
+        margin-bottom: 10px;
+        font-size: 1em;
+      }
+
+      .task-image {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .task-image img {
+        width: 90px;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+      }
+
+      .task-image img:hover {
+        transform: scale(1.1);
+      }
+
+      .tip {
+        background-color: #eaf4ff;
+        border-left: 4px solid #2b5be3;
+        padding: 12px;
+        border-radius: 10px;
+        font-size: 0.95em;
+        color: #333;
+      }
+    </style>
   </head>
-  <body>
-    <h1>Hello mem2</h1>
+  <body class="container1">
+    <section class="sidebar-body">
+      <h3>🧠 Tasks & Learning Goals</h3>
+      <p><strong>Assigned to:</strong> <em>Member 2 – Shrey Parmar</em></p>
+
+      <ul class="task-list">
+        <li>
+          ✅ Practice using different <strong>HTML tags</strong> and semantic
+          elements.
+        </li>
+        <li>
+          🎨 Experiment with <strong>CSS colors, fonts, and layouts</strong> for
+          better design.
+        </li>
+        <li>
+          🔗 Add an
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+            target="_blank"
+            style="color: #0078d4; text-decoration: none"
+            >HTML reference link</a
+          >
+          for quick learning.
+        </li>
+        <li>
+          🖼️ Include a small image or logo to make the section visually
+          appealing.
+        </li>
+      </ul>
+
+      <div class="task-image">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+          alt="HTML5 Logo"
+        />
+      </div>
+
+      <p class="tip">
+        <strong>💡 Tip:</strong> Keep your section neat and consistent — clean
+        structure improves readability!
+      </p>
+    </section>
   </body>
 </html>

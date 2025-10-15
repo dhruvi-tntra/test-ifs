@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Group 7 — Combined Page</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f1f5f9;
+        margin: 0;
+        padding: 20px;
+        color: #1e293b;
+      }
+      .section {
+        max-width: 800px;
+        margin: 20px auto;
+        background: #fff;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+      hr {
+        margin: 30px 0;
+        border: none;
+        border-top: 2px dashed #e5e7eb;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header" class="section"></div>
+    <hr />
+    <div id="body" class="section"></div>
+    <hr />
+    <div id="footer" class="section"></div>
+
+    <script>
+      async function loadHTML(file, elementId) {
+        try {
+          const response = await fetch(file);
+          if (!response.ok) throw new Error(`Failed to load ${file}`);
+          const html = await response.text();
+          document.getElementById(elementId).innerHTML = html;
+        } catch (err) {
+          document.getElementById(elementId).innerHTML =
+            "<p style='color:red;'>Could not load content.</p>";
+          console.error(err);
+        }
+      }
+
+      // Load the files from the same folder
+      loadHTML("header.html", "header");
+      loadHTML("body.html", "body");
+      loadHTML("footer.html", "footer");
+    </script>
+  </body>
+</html>
